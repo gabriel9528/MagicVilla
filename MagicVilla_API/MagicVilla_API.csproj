@@ -7,7 +7,25 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Modelos\NewFolder1\**" />
+    <Compile Remove="Modelos\NewFolder\**" />
+    <Content Remove="Modelos\NewFolder1\**" />
+    <Content Remove="Modelos\NewFolder\**" />
+    <EmbeddedResource Remove="Modelos\NewFolder1\**" />
+    <EmbeddedResource Remove="Modelos\NewFolder\**" />
+    <None Remove="Modelos\NewFolder1\**" />
+    <None Remove="Modelos\NewFolder\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.JsonPatch" Version="7.0.5" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="7.0.5" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
